@@ -10,10 +10,14 @@
 		07D8F67A1DE9A2AF003AE15D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D8F6791DE9A2AF003AE15D /* AppDelegate.swift */; };
 		07D8F67C1DE9A2AF003AE15D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D8F67B1DE9A2AF003AE15D /* ViewController.swift */; };
 		07D8F67F1DE9A2AF003AE15D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D8F67D1DE9A2AF003AE15D /* Main.storyboard */; };
-		07D8F6811DE9A2AF003AE15D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07D8F6801DE9A2AF003AE15D /* Assets.xcassets */; };
 		07D8F6841DE9A2AF003AE15D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D8F6821DE9A2AF003AE15D /* LaunchScreen.storyboard */; };
 		07D8F68F1DE9A2AF003AE15D /* FiestaDeLaMediaNaranjaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D8F68E1DE9A2AF003AE15D /* FiestaDeLaMediaNaranjaTests.swift */; };
 		07D8F69A1DE9A2AF003AE15D /* FiestaDeLaMediaNaranjaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D8F6991DE9A2AF003AE15D /* FiestaDeLaMediaNaranjaUITests.swift */; };
+		07D8F6A81DE9A4D3003AE15D /* img in Resources */ = {isa = PBXBuildFile; fileRef = 07D8F6A71DE9A4D3003AE15D /* img */; };
+		07D8F6AC1DE9A92D003AE15D /* NacimientoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D8F6AB1DE9A92D003AE15D /* NacimientoViewController.swift */; };
+		07D8F6B01DE9AFEB003AE15D /* FirstDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D8F6AF1DE9AFEB003AE15D /* FirstDateViewController.swift */; };
+		07D8F6B21DE9B1F5003AE15D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D8F6B11DE9B1F5003AE15D /* InfoViewController.swift */; };
+		07F159921DE9F1C5000981FB /* Asset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F159911DE9F1C5000981FB /* Asset.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +42,6 @@
 		07D8F6791DE9A2AF003AE15D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07D8F67B1DE9A2AF003AE15D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07D8F67E1DE9A2AF003AE15D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		07D8F6801DE9A2AF003AE15D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07D8F6831DE9A2AF003AE15D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07D8F6851DE9A2AF003AE15D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07D8F68A1DE9A2AF003AE15D /* FiestaDeLaMediaNaranjaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiestaDeLaMediaNaranjaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +50,11 @@
 		07D8F6951DE9A2AF003AE15D /* FiestaDeLaMediaNaranjaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiestaDeLaMediaNaranjaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D8F6991DE9A2AF003AE15D /* FiestaDeLaMediaNaranjaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiestaDeLaMediaNaranjaUITests.swift; sourceTree = "<group>"; };
 		07D8F69B1DE9A2AF003AE15D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07D8F6A71DE9A4D3003AE15D /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; name = img; path = ../img; sourceTree = "<group>"; };
+		07D8F6AB1DE9A92D003AE15D /* NacimientoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NacimientoViewController.swift; sourceTree = "<group>"; };
+		07D8F6AF1DE9AFEB003AE15D /* FirstDateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstDateViewController.swift; sourceTree = "<group>"; };
+		07D8F6B11DE9B1F5003AE15D /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		07F159911DE9F1C5000981FB /* Asset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Asset.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +105,16 @@
 		07D8F6781DE9A2AE003AE15D /* FiestaDeLaMediaNaranja */ = {
 			isa = PBXGroup;
 			children = (
+				07D8F6A71DE9A4D3003AE15D /* img */,
 				07D8F6791DE9A2AF003AE15D /* AppDelegate.swift */,
 				07D8F67B1DE9A2AF003AE15D /* ViewController.swift */,
+				07D8F6AB1DE9A92D003AE15D /* NacimientoViewController.swift */,
+				07D8F6AF1DE9AFEB003AE15D /* FirstDateViewController.swift */,
+				07D8F6B11DE9B1F5003AE15D /* InfoViewController.swift */,
 				07D8F67D1DE9A2AF003AE15D /* Main.storyboard */,
-				07D8F6801DE9A2AF003AE15D /* Assets.xcassets */,
 				07D8F6821DE9A2AF003AE15D /* LaunchScreen.storyboard */,
 				07D8F6851DE9A2AF003AE15D /* Info.plist */,
+				07F159911DE9F1C5000981FB /* Asset.xcassets */,
 			);
 			path = FiestaDeLaMediaNaranja;
 			sourceTree = "<group>";
@@ -232,8 +244,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07D8F6A81DE9A4D3003AE15D /* img in Resources */,
 				07D8F6841DE9A2AF003AE15D /* LaunchScreen.storyboard in Resources */,
-				07D8F6811DE9A2AF003AE15D /* Assets.xcassets in Resources */,
+				07F159921DE9F1C5000981FB /* Asset.xcassets in Resources */,
 				07D8F67F1DE9A2AF003AE15D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,7 +273,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				07D8F67C1DE9A2AF003AE15D /* ViewController.swift in Sources */,
+				07D8F6B01DE9AFEB003AE15D /* FirstDateViewController.swift in Sources */,
+				07D8F6AC1DE9A92D003AE15D /* NacimientoViewController.swift in Sources */,
 				07D8F67A1DE9A2AF003AE15D /* AppDelegate.swift in Sources */,
+				07D8F6B21DE9B1F5003AE15D /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +428,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = FiestaDeLaMediaNaranja/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = es.upm.dit.iweb.FiestaDeLaMediaNaranja;
@@ -424,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = FiestaDeLaMediaNaranja/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = es.upm.dit.iweb.FiestaDeLaMediaNaranja;
@@ -505,6 +523,7 @@
 				07D8F6A01DE9A2AF003AE15D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07D8F6A11DE9A2AF003AE15D /* Build configuration list for PBXNativeTarget "FiestaDeLaMediaNaranjaTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +532,7 @@
 				07D8F6A31DE9A2AF003AE15D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07D8F6A41DE9A2AF003AE15D /* Build configuration list for PBXNativeTarget "FiestaDeLaMediaNaranjaUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +541,7 @@
 				07D8F6A61DE9A2AF003AE15D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

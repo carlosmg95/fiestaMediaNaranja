@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FiestaDeLaMediaNaranja" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,267 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="La fiesta de la media naranja" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mfd-IW-WIF">
+                                <rect key="frame" x="16" y="43" width="343" height="63"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <color key="textColor" red="0.12167947814748523" green="0.42163212435233166" blue="0.099485490759907813" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHZ-nL-kiY">
+                                <rect key="frame" x="16" y="211" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Empezar"/>
+                                <connections>
+                                    <segue destination="IQj-CM-D82" kind="presentation" modalTransitionStyle="flipHorizontal" id="hFH-PG-FRP"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="media-naranja.png" translatesAutoresizingMaskIntoConstraints="NO" id="i1r-SX-BMb">
+                                <rect key="frame" x="67" y="314" width="240" height="201"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="l7M-c1-Lm0"/>
+                                    <constraint firstAttribute="height" constant="201" id="tx0-u9-1jM"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Mfd-IW-WIF" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="2Xp-DE-9cK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="i1r-SX-BMb" secondAttribute="bottom" constant="152" id="3i3-0Z-hLJ"/>
+                            <constraint firstItem="i1r-SX-BMb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="4op-m0-Fz2"/>
+                            <constraint firstItem="Mfd-IW-WIF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6uO-8h-prM"/>
+                            <constraint firstItem="mHZ-nL-kiY" firstAttribute="top" secondItem="Mfd-IW-WIF" secondAttribute="bottom" constant="105" id="9Ip-2g-nYP"/>
+                            <constraint firstItem="mHZ-nL-kiY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9eC-er-0o9"/>
+                            <constraint firstItem="mHZ-nL-kiY" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="B9O-Hw-oSV"/>
+                            <constraint firstItem="Mfd-IW-WIF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="E1g-DH-HGe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="i1r-SX-BMb" secondAttribute="trailing" constant="52" id="Fwe-t0-xAt"/>
+                            <constraint firstItem="mHZ-nL-kiY" firstAttribute="centerX" secondItem="Mfd-IW-WIF" secondAttribute="centerX" id="Y6w-Um-OAI"/>
+                            <constraint firstItem="i1r-SX-BMb" firstAttribute="centerX" secondItem="Mfd-IW-WIF" secondAttribute="centerX" id="pxI-YH-2It"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="mSS-1z-yGr" appends="YES" id="2Lg-Ck-V6W"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="mSS-1z-yGr">
+                    <connections>
+                        <segue destination="IQj-CM-D82" kind="presentation" modalTransitionStyle="flipHorizontal" id="BOq-Qk-5y1"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="-199.19999999999999" y="138.98050974512745"/>
+        </scene>
+        <!--Nacimiento View Controller-->
+        <scene sceneID="fdN-GQ-OnU">
+            <objects>
+                <viewController id="IQj-CM-D82" customClass="NacimientoViewController" customModule="FiestaDeLaMediaNaranja" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xdV-rb-p06"/>
+                        <viewControllerLayoutGuide type="bottom" id="wl6-GK-xtK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TZD-22-qv1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Introduca su fecha de nacimiento" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNe-eM-JRb">
+                                <rect key="frame" x="16" y="79" width="343" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="THV-lR-QzK">
+                                <rect key="frame" x="0.0" y="225" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="501853902.06857598">
+                                    <!--2016-11-26 11:51:42 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="es_ES"/>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9XL-y6-CdX">
+                                <rect key="frame" x="107" y="511" width="161" height="92"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Confirmar"/>
+                                <connections>
+                                    <segue destination="QSG-rg-b2Q" kind="presentation" identifier="First date VC" modalTransitionStyle="flipHorizontal" id="mgf-Ug-Xyr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="9XL-y6-CdX" secondAttribute="trailing" constant="91" id="1wk-bz-m2m"/>
+                            <constraint firstAttribute="trailing" secondItem="THV-lR-QzK" secondAttribute="trailing" id="3tb-0g-quR"/>
+                            <constraint firstItem="THV-lR-QzK" firstAttribute="centerX" secondItem="gNe-eM-JRb" secondAttribute="centerX" id="5bj-XL-DEh"/>
+                            <constraint firstItem="gNe-eM-JRb" firstAttribute="trailing" secondItem="TZD-22-qv1" secondAttribute="trailingMargin" id="Mcc-eF-I1d"/>
+                            <constraint firstItem="gNe-eM-JRb" firstAttribute="leading" secondItem="TZD-22-qv1" secondAttribute="leadingMargin" id="Scv-W5-L5P"/>
+                            <constraint firstItem="9XL-y6-CdX" firstAttribute="centerX" secondItem="gNe-eM-JRb" secondAttribute="centerX" id="TOl-no-rIJ"/>
+                            <constraint firstItem="9XL-y6-CdX" firstAttribute="leading" secondItem="TZD-22-qv1" secondAttribute="leadingMargin" constant="91" id="XXI-Qu-Jvu"/>
+                            <constraint firstItem="gNe-eM-JRb" firstAttribute="top" secondItem="xdV-rb-p06" secondAttribute="bottom" constant="59" id="Xo6-sr-XqT"/>
+                            <constraint firstItem="THV-lR-QzK" firstAttribute="leading" secondItem="TZD-22-qv1" secondAttribute="leading" id="dAw-N3-BbV"/>
+                            <constraint firstItem="THV-lR-QzK" firstAttribute="top" secondItem="gNe-eM-JRb" secondAttribute="bottom" constant="103" id="u6w-F7-lE7"/>
+                            <constraint firstItem="wl6-GK-xtK" firstAttribute="top" secondItem="9XL-y6-CdX" secondAttribute="bottom" constant="64" id="vdv-ZM-PT4"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="6xo-Wo-PZO" appends="YES" id="d6W-Kg-42q"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="birthdayPicker" destination="THV-lR-QzK" id="y51-uE-V1k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GfI-Ui-ycT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="6xo-Wo-PZO">
+                    <connections>
+                        <segue destination="QSG-rg-b2Q" kind="presentation" identifier="First Date Gesture" modalTransitionStyle="flipHorizontal" id="8mE-O7-unc"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="581.60000000000002" y="138.98050974512745"/>
+        </scene>
+        <!--First Date View Controller-->
+        <scene sceneID="Gha-43-ZoX">
+            <objects>
+                <viewController storyboardIdentifier="Calendar" id="QSG-rg-b2Q" customClass="FirstDateViewController" customModule="FiestaDeLaMediaNaranja" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="slA-Ku-459"/>
+                        <viewControllerLayoutGuide type="bottom" id="3kM-PV-PJ9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bJX-xe-ec8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Introduca la fecha de la primera cita" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VS0-SF-V8w">
+                                <rect key="frame" x="16" y="88" width="343" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="V5H-nz-ytE">
+                                <rect key="frame" x="0.0" y="225" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="501853902.06857598">
+                                    <!--2016-11-26 11:51:42 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="es_ES"/>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8N-Sd-Fkb">
+                                <rect key="frame" x="107" y="519" width="161" height="92"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Confirmar"/>
+                                <connections>
+                                    <segue destination="0E5-51-K97" kind="presentation" identifier="Show info VC" modalTransitionStyle="flipHorizontal" id="oRj-JW-bm5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="VS0-SF-V8w" firstAttribute="top" secondItem="slA-Ku-459" secondAttribute="bottom" constant="68" id="3Lm-jV-sFo"/>
+                            <constraint firstItem="y8N-Sd-Fkb" firstAttribute="leading" secondItem="bJX-xe-ec8" secondAttribute="leadingMargin" constant="91" id="8nL-Zb-kTa"/>
+                            <constraint firstItem="y8N-Sd-Fkb" firstAttribute="centerX" secondItem="VS0-SF-V8w" secondAttribute="centerX" id="Cm2-vD-ePc"/>
+                            <constraint firstItem="3kM-PV-PJ9" firstAttribute="top" secondItem="y8N-Sd-Fkb" secondAttribute="bottom" constant="56" id="JNv-ie-xg1"/>
+                            <constraint firstAttribute="trailing" secondItem="V5H-nz-ytE" secondAttribute="trailing" id="Knj-UA-OP3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="y8N-Sd-Fkb" secondAttribute="trailing" constant="91" id="SDE-lQ-h8G"/>
+                            <constraint firstItem="V5H-nz-ytE" firstAttribute="top" secondItem="VS0-SF-V8w" secondAttribute="bottom" constant="94" id="Svv-pW-sEd"/>
+                            <constraint firstItem="VS0-SF-V8w" firstAttribute="trailing" secondItem="bJX-xe-ec8" secondAttribute="trailingMargin" id="T1B-Hu-0YL"/>
+                            <constraint firstItem="V5H-nz-ytE" firstAttribute="centerX" secondItem="VS0-SF-V8w" secondAttribute="centerX" id="bqB-Xi-6YA"/>
+                            <constraint firstItem="VS0-SF-V8w" firstAttribute="leading" secondItem="bJX-xe-ec8" secondAttribute="leadingMargin" id="lKd-dx-fzi"/>
+                            <constraint firstItem="V5H-nz-ytE" firstAttribute="leading" secondItem="bJX-xe-ec8" secondAttribute="leading" id="pHg-Ql-Iks"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="9I9-gu-o80" appends="YES" id="U1M-c9-JpP"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="firstDatePicker" destination="V5H-nz-ytE" id="oPK-zT-MwS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sgc-s0-bAs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="9I9-gu-o80">
+                    <connections>
+                        <segue destination="0E5-51-K97" kind="presentation" identifier="Show info Gesture" modalTransitionStyle="flipHorizontal" id="R1J-g3-VBJ"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1333.5999999999999" y="136.28185907046478"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="YXx-5V-98p">
+            <objects>
+                <viewController id="0E5-51-K97" customClass="InfoViewController" customModule="FiestaDeLaMediaNaranja" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6jr-jO-v66"/>
+                        <viewControllerLayoutGuide type="bottom" id="H72-Y9-t4a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KOw-Tt-Jjn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="HGR-b2-CHt">
+                                <rect key="frame" x="16" y="379" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tumblr_njq94tPPz71sqlvbwo1_500.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ys2-Rv-YMl">
+                                <rect key="frame" x="47" y="28" width="281" height="177"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="177" id="3NZ-q1-wpj"/>
+                                    <constraint firstAttribute="width" constant="281" id="khF-Rs-LFb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="La fiesta de la media naranja es:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxd-hs-BTR">
+                                <rect key="frame" x="16" y="310" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLL-JO-lE7">
+                                <rect key="frame" x="16" y="490" width="343" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Inicio"/>
+                                <connections>
+                                    <segue destination="sdF-sa-DCo" kind="unwind" identifier="Inicio" unwindAction="methodName:" id="lht-bv-Dnk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ys2-Rv-YMl" firstAttribute="top" secondItem="6jr-jO-v66" secondAttribute="bottom" constant="8" id="0IA-pV-NbW"/>
+                            <constraint firstItem="Ys2-Rv-YMl" firstAttribute="leading" secondItem="KOw-Tt-Jjn" secondAttribute="leadingMargin" constant="31" id="1zH-kd-Flx"/>
+                            <constraint firstItem="HGR-b2-CHt" firstAttribute="centerX" secondItem="Ys2-Rv-YMl" secondAttribute="centerX" id="2yc-5O-0NU"/>
+                            <constraint firstItem="HGR-b2-CHt" firstAttribute="top" secondItem="xxd-hs-BTR" secondAttribute="bottom" constant="48" id="8lJ-3L-bHN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ys2-Rv-YMl" secondAttribute="trailing" constant="31" id="EJ4-Fk-KKz"/>
+                            <constraint firstItem="xxd-hs-BTR" firstAttribute="leading" secondItem="KOw-Tt-Jjn" secondAttribute="leadingMargin" id="HUm-27-bZ1"/>
+                            <constraint firstItem="xxd-hs-BTR" firstAttribute="trailing" secondItem="KOw-Tt-Jjn" secondAttribute="trailingMargin" id="R1n-Dm-S4J"/>
+                            <constraint firstItem="xxd-hs-BTR" firstAttribute="centerX" secondItem="Ys2-Rv-YMl" secondAttribute="centerX" id="Yty-JP-6V1"/>
+                            <constraint firstItem="gLL-JO-lE7" firstAttribute="trailing" secondItem="KOw-Tt-Jjn" secondAttribute="trailingMargin" id="egL-5q-iuM"/>
+                            <constraint firstItem="gLL-JO-lE7" firstAttribute="top" secondItem="HGR-b2-CHt" secondAttribute="bottom" constant="90" id="fvP-mP-oEA"/>
+                            <constraint firstItem="H72-Y9-t4a" firstAttribute="top" relation="lessThanOrEqual" secondItem="gLL-JO-lE7" secondAttribute="bottom" priority="998" constant="148" id="hGi-sL-DSH"/>
+                            <constraint firstItem="xxd-hs-BTR" firstAttribute="top" secondItem="Ys2-Rv-YMl" secondAttribute="bottom" constant="105" id="nCd-6d-1E3"/>
+                            <constraint firstItem="gLL-JO-lE7" firstAttribute="centerX" secondItem="Ys2-Rv-YMl" secondAttribute="centerX" id="rO9-zY-oS7"/>
+                            <constraint firstItem="gLL-JO-lE7" firstAttribute="leading" secondItem="KOw-Tt-Jjn" secondAttribute="leadingMargin" id="sJR-t0-ggl"/>
+                            <constraint firstItem="HGR-b2-CHt" firstAttribute="trailing" secondItem="KOw-Tt-Jjn" secondAttribute="trailingMargin" id="tkU-L9-E8t"/>
+                            <constraint firstItem="HGR-b2-CHt" firstAttribute="leading" secondItem="KOw-Tt-Jjn" secondAttribute="leadingMargin" id="ug4-8y-KlU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="halfOrangePartyLabel" destination="HGR-b2-CHt" id="tdP-9E-6L2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T7s-g7-OHA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="sdF-sa-DCo" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1949.5999999999999" y="137.18140929535232"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="media-naranja.png" width="509" height="528"/>
+        <image name="tumblr_njq94tPPz71sqlvbwo1_500.png" width="464" height="465"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="oRj-JW-bm5"/>
+        <segue reference="8mE-O7-unc"/>
+        <segue reference="BOq-Qk-5y1"/>
+    </inferredMetricsTieBreakers>
 </document>
