@@ -14,8 +14,10 @@ class NacimientoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let defaults = UserDefaults.standard
+        if let birthDate = defaults.object(forKey: "birthday") as? Date {
+            birthdayPicker.setDate(birthDate, animated: true)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,7 +30,13 @@ class NacimientoViewController: UIViewController {
             if let fdvc = segue.destination as? FirstDateViewController {
                 fdvc.birthday = birthdayPicker.date
             }
+            let defaults = UserDefaults.standard
+            defaults.set(birthdayPicker.date, forKey: "birthday")
+            defaults.synchronize()
         }
+    }
+    
+    @IBAction func BackToBirthDay(_ segue: UIStoryboardSegue) {
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
