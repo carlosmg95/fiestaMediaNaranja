@@ -15,8 +15,10 @@ class FirstDateViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let defaults = UserDefaults.standard
+        if let firstDate = defaults.object(forKey: "firstDate") as? Date {
+            firstDatePicker.setDate(firstDate, animated: true)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,8 +31,14 @@ class FirstDateViewController: UIViewController {
             if let ivc = segue.destination as? InfoViewController {
                 let difference = firstDatePicker.date.timeIntervalSince(birthday)
                 ivc.halfOrangeParty = Date(timeInterval: difference, since: firstDatePicker.date)
+                let defaults = UserDefaults.standard
+                defaults.set(firstDatePicker.date, forKey: "firstDate")
+                defaults.synchronize()
             }
         }
+    }
+    
+    @IBAction func BackToFirstDate(_ segue: UIStoryboardSegue) {
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
