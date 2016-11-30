@@ -22,6 +22,17 @@ class ViewController: UIViewController {
     
     @IBAction func methodName(_ segue: UIStoryboardSegue) {
     }
+    
+    @IBAction func showPopover(sender: UIButton) {
+        if let pvc = storyboard?.instantiateViewController(withIdentifier: "POS") as? PopOverViewController {
+            pvc.modalPresentationStyle = .popover
+            pvc.popoverPresentationController?.sourceView = view
+            pvc.popoverPresentationController?.sourceRect = sender.frame
+            pvc.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection.right
+            
+            present(pvc, animated: true)
+        }
+    }
 
 
 }
